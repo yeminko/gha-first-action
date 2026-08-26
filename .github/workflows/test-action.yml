@@ -1,0 +1,8 @@
+name: Test Action
+on: workflow_dispatch
+jobs:
+  test-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Greeting
+        run: echo "Hello World!"
