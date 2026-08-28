@@ -1,10 +1,17 @@
 name: Test Workflow
 on: [push, workflow_dispatch]
 jobs:
-  test-job:
+  first-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Print Greeting
+      - name: First Job Greeting
         run: echo "Hello World!"
-      - name: Print Goodbye
+      - name: First Job Goodbye
+        run: echo "Done - Bye!"
+  second-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Second Job Greeting
+        run: echo "Hello World!"
+      - name: Second Job Goodbye
         run: echo "Done - Bye!"
